@@ -1,0 +1,25 @@
+{
+  "name": "my-html-app",
+  "productName": "MyHtmlApp",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.0"
+  },
+  "build": {
+    "appId": "com.example.htmlapp",
+    "win": {
+      "target": "nsis"
+    },
+    "files": [
+      "index.html",
+      "main.js"
+    ]
+  }
+}
+
